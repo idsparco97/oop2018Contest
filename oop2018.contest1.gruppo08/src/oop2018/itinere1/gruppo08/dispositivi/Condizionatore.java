@@ -14,9 +14,7 @@ public class Condizionatore extends AttuatoreRegolabile{
     public Condizionatore(int id, double livelloMin, double livelloMax, double livello) {
         super(id, livelloMin, livelloMax, livello);
     }
-
-    
-    
+ 
     @Override
     public String toString() {
         return super.toString()+" - Tipo: Condizionatore";
