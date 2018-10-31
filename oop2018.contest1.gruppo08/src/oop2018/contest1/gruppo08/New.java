@@ -10,5 +10,5 @@ package oop2018.contest1.gruppo08;
  * @author liovi
  */
 public class New {
-    ciaao
+    ciaao;wdhuwidhw
 }
