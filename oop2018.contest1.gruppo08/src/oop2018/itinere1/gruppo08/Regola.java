@@ -7,13 +7,14 @@ package oop2018.itinere1.gruppo08;
 import oop2018.itinere1.gruppo08.azioni.*;
 import oop2018.itinere1.gruppo08.condizioni.*;
 
+
 /**
  *
  * @author liovi
  */
 public class Regola{
-    private Condizione condizione;
-    private Azione azione;
+    private final Condizione condizione;
+    private final Azione azione;
 
     public Regola(Condizione condizione, Azione azione) {
         this.condizione = condizione;
@@ -38,7 +39,7 @@ public class Regola{
     
     @Override
     public String toString() {
-        return "Regola{" + '}';
+        return "Informazioni regola - "+ condizione.toString();
     }
     
     
