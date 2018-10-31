@@ -5,6 +5,8 @@
  */
 package oop2018.itinere1.gruppo08.condizioni;
 
+import oop2018.itinere1.gruppo08.dispositivi.*;
+
 /**
  *
  * @author liovi
