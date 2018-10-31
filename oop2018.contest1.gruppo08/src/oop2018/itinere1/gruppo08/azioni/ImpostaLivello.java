@@ -5,6 +5,7 @@
  */
 package oop2018.itinere1.gruppo08.azioni;
 import oop2018.itinere1.gruppo08.*;
+import oop2018.itinere1.gruppo08.dispositivi.*;
 
 /**
  *
