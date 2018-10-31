@@ -12,8 +12,8 @@ import oop2018.itinere1.gruppo08.dispositivi.*;
  * @author liovi
  */
 public class CondizioneMinoreDi implements Condizione{
-    private Sensore sensore;
-    private double valoreDiConfronto;
+    private final Sensore sensore;
+    private final double valoreDiConfronto;
 
     public CondizioneMinoreDi(Sensore sensore, double valoreDiConfronto) {
         this.sensore = sensore;
@@ -22,17 +22,16 @@ public class CondizioneMinoreDi implements Condizione{
     
     @Override
     public boolean verifica(){
-         if(sensore.getValore() < valoreDiConfronto){
+         if(sensore.getValore() < this.valoreDiConfronto){
             return true;
-        }
-        else
+        }else        
             return false;
     }
 
     @Override
     public String toString() {
-        return "Tipo Condizione: Minore di" + valoreDiConfronto + 
-                " - attivata per: " + super.toString();
+        return "Tipo Condizione: Minore di " + valoreDiConfronto + 
+                " - attivata per: " + sensore.toString();
     }
     
     

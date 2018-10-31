@@ -32,7 +32,7 @@ public class Impianto{
         regole.add(r);
     }
     
-    public void applicaRegole() throws LivelloNonValidoException{
+    public void applicaRegole(){
         for(Regola x: regole){
             x.applica();
         }

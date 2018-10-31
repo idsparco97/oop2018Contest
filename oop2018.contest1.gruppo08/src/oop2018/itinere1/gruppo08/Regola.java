@@ -22,7 +22,7 @@ public class Regola{
         this.azione = azione;
     }
 
-    public boolean applica() throws LivelloNonValidoException{
+    public boolean applica(){
         if(this.condizione.verifica()){
             try{
             azione.esegui();

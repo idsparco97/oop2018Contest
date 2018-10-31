@@ -19,7 +19,7 @@ public abstract class AttuatoreRegolabile extends Attuatore{
         super(id);
         this.livelloMin = livelloMin;
         this.livelloMax = livelloMax;
-        if(this.livelloMin<=this.livello && this.livello<=this.livelloMax)
+        if((livelloMin<=livello) && (livello<=livelloMax))
            this.livello = livello;
         else 
            throw new LivelloNonValidoException();

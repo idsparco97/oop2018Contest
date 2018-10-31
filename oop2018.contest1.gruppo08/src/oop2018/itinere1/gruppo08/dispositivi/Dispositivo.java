@@ -48,10 +48,10 @@ public abstract class Dispositivo {
     }
 
     public void accendi(){
-        this.acceso = true;
+        acceso = true;
     }
     public void spegni(){
-        this.acceso=false;
+         acceso = false;
     }
     public boolean isAcceso(){
         if(this.acceso)
@@ -62,8 +62,10 @@ public abstract class Dispositivo {
     
     @Override
     public String toString() {
-        
-        return "ID dispositivo: " + id + ", Stato: " + acceso;
+        if(this.isAcceso())
+            return "ID dispositivo: " + id + ", Stato: Acceso";
+        else
+            return "ID dispositivo: " + id + ", Stato: Spento";
     }
     
     

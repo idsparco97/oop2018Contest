@@ -17,7 +17,7 @@ public class SensoreTemperatura extends Sensore{
 
     @Override
     public String toString() {
-        return super.toString()+ " SensoreTemperatura{" + '}';
+        return super.toString()+ " - Tipo: Sensore di temperatura";
     }
     
     

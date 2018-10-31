@@ -5,7 +5,6 @@
  */
 package oop2018.itinere1.gruppo08.condizioni;
 
-import oop2018.itinere1.gruppo08.*;
 import oop2018.itinere1.gruppo08.dispositivi.*;
 
 /**
@@ -13,27 +12,26 @@ import oop2018.itinere1.gruppo08.dispositivi.*;
  * @author liovi
  */
 public class CondizioneMaggioreDi implements Condizione {
-    private Sensore sensore;
-    private double valoreDiConfronto;
+    private final Sensore sensore;
+    private final double valoreDiConfronto;
 
     public CondizioneMaggioreDi(Sensore sensore, double valoreDiConfronto) {
         this.sensore = sensore;
         this.valoreDiConfronto = valoreDiConfronto;
     }
+    
     @Override
     public boolean verifica(){
-        if(sensore.getValore() > valoreDiConfronto){
+        if(sensore.getValore() > this.valoreDiConfronto){
             return true;
-        }
-        else
+        }else        
             return false;
     }
-
     
     @Override
     public String toString() {
-        return "Tipo Condizione: Maggiore di" + valoreDiConfronto + 
-                " - attivata per: "+super.toString();
+        return "Tipo Condizione: Maggiore di " + valoreDiConfronto + 
+                " - attivata per: " + sensore.toString();
     }
     
     
