@@ -16,7 +16,7 @@ public abstract class Luce extends Attuatore{
     }
 
     
-    //DA DEFINIRE
+    
     @Override
     public String toString() {
         return super.toString()+ " - Tipo: Luce";

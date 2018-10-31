@@ -16,7 +16,7 @@ public class Condizionatore extends AttuatoreRegolabile{
     }
 
     
-    //Fatto bene
+    
     @Override
     public String toString() {
         return super.toString()+" - Tipo: Condizionatore";
