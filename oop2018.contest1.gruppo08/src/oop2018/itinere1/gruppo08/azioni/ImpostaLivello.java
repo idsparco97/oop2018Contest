@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package oop2018.itinere1.gruppo08.azioni;
-import oop2018.itinere1.gruppo08.*;
+import oop2018.itinere1.gruppo08.dispositivi.*;
 
 /**
  *
@@ -20,9 +20,17 @@ public class ImpostaLivello implements Azione{
     }
 
     @Override
-    public void esegui() throws Exception {
-        
+    public void esegui() throws LivelloNonValidoException {
+        if((ar.getLivelloMin() < ar.getLivello()) && (ar.getLivello()<ar.getLivelloMax())){
+            livelloDaImpostare=ar.getLivello();
+        }
     }
+
+    @Override
+    public String toString() {
+        return ", Attuatore regolabile Liv/min/max = ";
+    }
+    
     
     
 }

@@ -27,7 +27,7 @@ public abstract class Sensore extends Dispositivo{
         super(id);
     }
     
-        @Override
+    @Override
     public String toString() {
         return super.toString() + " Categoria: Sensore" + " Lettura: " + valore;
     }

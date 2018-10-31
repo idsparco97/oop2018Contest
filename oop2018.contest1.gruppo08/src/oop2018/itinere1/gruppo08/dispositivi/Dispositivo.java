@@ -11,7 +11,7 @@ package oop2018.itinere1.gruppo08.dispositivi;
  */
 public abstract class Dispositivo {
     private int id;
-    private boolean accesso;
+    private boolean acceso;
 
     public Dispositivo(int id) {
         this.id = id;
@@ -19,7 +19,7 @@ public abstract class Dispositivo {
 
     @Override
     public String toString() {
-        return "ID dispositivo: " + id + ", Stato: " + accesso;
+        return "ID dispositivo: " + id + ", Stato: " + acceso;
     }
 
     @Override
@@ -52,13 +52,16 @@ public abstract class Dispositivo {
     }
 
     public void accendi(){
-        
+        this.acceso = true;
     }
     public void spegni(){
-        
+        this.acceso=false;
     }
     public boolean isAcceso(){
-        return false;
+        if(this.acceso)
+            return true;
+        else 
+            return false;
     }
     
     
