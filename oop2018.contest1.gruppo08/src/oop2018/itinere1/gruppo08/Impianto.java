@@ -12,25 +12,30 @@ import java.util.*;
  * @author liovi
  */
 public class Impianto{
-    
-    private List<Dispositivo> dispositivi;
+    private Map<, Dispositivo> dispositivi;
     private List<Regola> regole;
     private String nome;
+
+    public Impianto(String nome) {
+        this.nome = nome;
+    }
     
     public Dispositivo add(Dispositivo d){
-        
+        dispositivi.put(, d)
     }
     
     public Dispositivo getDispositivo ( int id){
-        
+        return dispositivi.get(id);
     }
     
     public void add(Regola r){
-        
+        regole.add(r);
     }
     
-    public void applicaRegole(){
-        
+    public void applicaRegole() throws Exception{
+        for(Regola x: regole){
+            x.applica();
+        }
     }
 
     @Override
