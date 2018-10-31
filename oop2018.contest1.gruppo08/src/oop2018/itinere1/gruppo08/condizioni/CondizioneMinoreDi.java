@@ -35,4 +35,5 @@ public class CondizioneMinoreDi implements Condizione{
                 " - attivata per: " + super.toString();
     }
     
+    
 }
