@@ -27,9 +27,6 @@ public class ImpostaStatoAccensione implements Azione{
        else
            attuatore.spegni();
    }
-
-   
-   
    
    //DA CONTROLLARE NEL MAIN SE STAMPA LA COSA GIUSTA POICHè TOSTRING.
     @Override
