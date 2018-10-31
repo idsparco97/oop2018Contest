@@ -6,6 +6,7 @@
 package oop2018.itinere1.gruppo08;
 import oop2018.itinere1.gruppo08.azioni.*;
 import oop2018.itinere1.gruppo08.condizioni.*;
+import oop2018.itinere1.gruppo08.dispositivi.LivelloNonValidoException;
 
 
 /**
@@ -21,7 +22,7 @@ public class Regola{
         this.azione = azione;
     }
 
-    public boolean applica() throws Exception{
+    public boolean applica() throws LivelloNonValidoException, Exception{
         if(condizione.verifica()){
             azione.esegui();
             return true;
