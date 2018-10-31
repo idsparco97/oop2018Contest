@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package oop2018.itinere1.gruppoXX.azioni;
+package oop2018.itinere1.gruppo08.azioni;
 
 /**
  *
