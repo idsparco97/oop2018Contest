@@ -11,8 +11,8 @@ package oop2018.itinere1.gruppo08.dispositivi;
  */
 public abstract class AttuatoreRegolabile extends Attuatore{
     
-    private double livelloMin;
-    private double livelloMax;
+    private final double livelloMin;
+    private final double livelloMax;
     private double livello;
 
     public AttuatoreRegolabile(int id, double livelloMin, double livelloMax, double livello) {
