@@ -32,8 +32,7 @@ public class CondizioneMinoreDi implements Condizione{
     @Override
     public String toString() {
         return "Tipo Condizione: Minore di" + valoreDiConfronto + 
-                " - attivata per: ID dispositivo: " + id + ", Stato: " + stato + " Categoria: " + sensore + " Lettura: " + lettura
-                + " - Tipo: " + tipo;
+                " - attivata per: " + super.toString();
     }
     
 }

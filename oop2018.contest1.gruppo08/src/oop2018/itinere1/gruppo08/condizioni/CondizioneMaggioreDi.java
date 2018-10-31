@@ -29,11 +29,11 @@ public class CondizioneMaggioreDi implements Condizione {
             return false;
     }
 
+    
     @Override
     public String toString() {
         return "Tipo Condizione: Maggiore di" + valoreDiConfronto + 
-                " - attivata per: ID dispositivo: " + id + ", Stato: " + stato + " Categoria: " + sensore + " Lettura: " + lettura
-                + " - Tipo: " + tipo;
+                " - attivata per: "+super.toString();
     }
     
     
