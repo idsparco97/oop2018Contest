@@ -9,6 +9,20 @@ package oop2018.itinere1.gruppo08.dispositivi;
  *
  * @author liovi
  */
-public class SensoreTemperatura {
+public class SensoreTemperatura extends Sensore{
+    
+    public SensoreTemperatura(int id) {
+        super(id);
+    }
+
+    
+    //DA DEFINIRE
+    @Override
+    public String toString() {
+        return super.toString()+ " SensoreTemperatura{" + '}';
+    }
+    
+    
+    
     
 }

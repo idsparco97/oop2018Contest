@@ -9,6 +9,18 @@ package oop2018.itinere1.gruppo08.dispositivi;
  *
  * @author liovi
  */
-public class LuceRegolabile {
+public class LuceRegolabile extends AttuatoreRegolabile{
+    
+    public LuceRegolabile(int id, double livelloMin, double livelloMax, double livello) {
+        super(id, livelloMin, livelloMax, livello);
+    }
+
+    
+    //Fatto bene
+    @Override
+    public String toString() {
+        return super.toString()+" - Tipo: Luce regolabile";
+    }
+    
     
 }
