@@ -22,11 +22,15 @@ public class Regola{
         this.azione = azione;
     }
 
-    public boolean applica() throws LivelloNonValidoException, Exception{
-        if(condizione.verifica()){
+    public boolean applica() throws LivelloNonValidoException{
+        if(this.condizione.verifica()){
+            try{
             azione.esegui();
+            }catch (Exception ex){
+                return false;
+            }
             return true;
-        }else
+        }else   
             return false;
     }
 

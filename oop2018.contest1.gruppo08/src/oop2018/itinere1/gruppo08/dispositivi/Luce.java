@@ -9,7 +9,7 @@ package oop2018.itinere1.gruppo08.dispositivi;
  *
  * @author liovi
  */
-public abstract class Luce extends Attuatore{
+public class Luce extends Attuatore{
     
     public Luce(int id) {
         super(id);

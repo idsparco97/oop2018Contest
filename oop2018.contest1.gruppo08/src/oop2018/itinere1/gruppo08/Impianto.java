@@ -32,7 +32,7 @@ public class Impianto{
         regole.add(r);
     }
     
-    public void applicaRegole() throws LivelloNonValidoException, Exception{
+    public void applicaRegole() throws LivelloNonValidoException{
         for(Regola x: regole){
             x.applica();
         }
@@ -40,7 +40,7 @@ public class Impianto{
 
     @Override
     public String toString() {
-        return "Impianto{" + "dispositivi=" + dispositivi + ", regole=" + regole + ", nome=" + nome + '}';
+        return "";
     }
     
     
