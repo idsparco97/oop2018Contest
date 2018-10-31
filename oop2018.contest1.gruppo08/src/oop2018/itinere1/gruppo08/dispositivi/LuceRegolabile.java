@@ -16,7 +16,7 @@ public class LuceRegolabile extends AttuatoreRegolabile{
     }
 
     
-    //Fatto bene
+    
     @Override
     public String toString() {
         return super.toString()+" - Tipo: Luce regolabile";

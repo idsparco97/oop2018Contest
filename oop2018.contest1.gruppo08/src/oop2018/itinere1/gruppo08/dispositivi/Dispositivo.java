@@ -52,13 +52,16 @@ public abstract class Dispositivo {
     }
 
     public void accendi(){
-        
+        this.acceso = true;
     }
     public void spegni(){
-        
+        this.acceso=false;
     }
     public boolean isAcceso(){
-        return false;
+        if(this.acceso)
+            return true;
+        else 
+            return false;
     }
     
     

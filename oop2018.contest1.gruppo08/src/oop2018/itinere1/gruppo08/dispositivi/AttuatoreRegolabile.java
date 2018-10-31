@@ -39,7 +39,7 @@ public abstract class AttuatoreRegolabile extends Attuatore{
     }
 
     
-    //Fatto bene
+    
     @Override
     public String toString() {
         return super.toString()+" Attuatore regolabile Liv/Min/Max = "+ livello +"/"+  livelloMin +"/" + livelloMax ;
