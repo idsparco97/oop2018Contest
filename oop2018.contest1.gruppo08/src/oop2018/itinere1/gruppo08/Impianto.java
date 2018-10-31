@@ -12,16 +12,16 @@ import java.util.*;
  * @author liovi
  */
 public class Impianto{
-    private Map<, Dispositivo> dispositivi;
-    private List<Regola> regole;
-    private String nome;
+    private final Map<Integer, Dispositivo> dispositivi = new HashMap<>();
+    private final List<Regola> regole = new LinkedList<>();
+    private final String nome;
 
     public Impianto(String nome) {
         this.nome = nome;
     }
     
     public Dispositivo add(Dispositivo d){
-        dispositivi.put(, d)
+        return dispositivi.put(d.getId(), d);
     }
     
     public Dispositivo getDispositivo ( int id){
