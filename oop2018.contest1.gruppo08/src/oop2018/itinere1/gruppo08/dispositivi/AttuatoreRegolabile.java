@@ -15,11 +15,14 @@ public abstract class AttuatoreRegolabile extends Attuatore{
     private final double livelloMax;
     private double livello;
 
-    public AttuatoreRegolabile(int id, double livelloMin, double livelloMax, double livello) {
+    public AttuatoreRegolabile(int id, double livelloMin, double livelloMax, double livello) throws LivelloNonValidoException{
         super(id);
         this.livelloMin = livelloMin;
         this.livelloMax = livelloMax;
-        this.livello = livello;
+        if(this.livelloMin<=this.livello && this.livello<=this.livelloMax)
+           this.livello = livello;
+        else 
+           throw new LivelloNonValidoException();
     }
 
     public double getLivelloMin() {
@@ -34,8 +37,11 @@ public abstract class AttuatoreRegolabile extends Attuatore{
         return livello;
     }
 
-    public void setLivello(double livello) {
-        this.livello = livello;
+    public void setLivello(double livello) throws LivelloNonValidoException {
+        if(this.livelloMin<=this.livello && this.livello<=this.livelloMax)
+           this.livello = livello;
+        else 
+           throw new LivelloNonValidoException();
     }
 
     
