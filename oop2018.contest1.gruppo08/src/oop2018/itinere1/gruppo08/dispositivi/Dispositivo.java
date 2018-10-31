@@ -11,7 +11,7 @@ package oop2018.itinere1.gruppo08.dispositivi;
  */
 public abstract class Dispositivo {
     private int id;
-    private boolean accesso;
+    private boolean acceso;
 
     public Dispositivo(int id) {
         this.id = id;
