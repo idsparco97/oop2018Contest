@@ -10,5 +10,56 @@ package oop2018.itinere1.gruppo08.dispositivi;
  * @author liovi
  */
 public abstract class Dispositivo {
+    private int id;
+    private boolean accesso;
+
+    public Dispositivo(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "ID dispositivo: " + id + ", Stato: " + accesso;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 79 * hash + this.id;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Dispositivo other = (Dispositivo) obj;
+        if (this.id != other.id) {
+            return false;
+        }
+        return true;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void accendi(){
+        
+    }
+    public void spegni(){
+        
+    }
+    public boolean isAcceso(){
+        return false;
+    }
+    
     
 }

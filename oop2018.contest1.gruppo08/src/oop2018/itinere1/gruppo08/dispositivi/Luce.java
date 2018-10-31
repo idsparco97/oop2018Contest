@@ -9,6 +9,19 @@ package oop2018.itinere1.gruppo08.dispositivi;
  *
  * @author liovi
  */
-public class Luce {
+public abstract class Luce extends Attuatore{
+    
+    public Luce(int id) {
+        super(id);
+    }
+
+    
+    //DA DEFINIRE
+    @Override
+    public String toString() {
+        return super.toString()+ " - Tipo: Luce";
+    }
+    
+    
     
 }
