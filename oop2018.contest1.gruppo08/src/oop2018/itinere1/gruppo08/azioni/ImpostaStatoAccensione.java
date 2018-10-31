@@ -14,15 +14,15 @@ import oop2018.itinere1.gruppo08.dispositivi.*;
 public class ImpostaStatoAccensione implements Azione{
 
    private Attuatore attuatore;
-   private boolean SetOn;
+   private boolean setOn;
 
-    public ImpostaStatoAccensione(Attuatore attuatore, boolean SetOn) {
+    public ImpostaStatoAccensione(Attuatore attuatore, boolean setOn) {
         this.attuatore = attuatore;
-        this.SetOn = SetOn;
+        this.setOn = setOn;
     }
    
    public void esegui(){
-       if(SetOn)
+       if(setOn)
            attuatore.accendi();
        else
            attuatore.spegni();
@@ -31,7 +31,10 @@ public class ImpostaStatoAccensione implements Azione{
    //DA CONTROLLARE NEL MAIN SE STAMPA LA COSA GIUSTA POICHè TOSTRING.
     @Override
     public String toString(){
-        return "Tipo azione: " + super.toString(); 
+        if (setOn)
+            return "Tipo azione: Accendi - attivata per: " + super.toString(); 
+        else 
+            return "Tipo azione: Spegni - attivata per: " + super.toString();
     }
    
    
