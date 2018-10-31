@@ -21,7 +21,7 @@ public class ImpostaStatoAccensione implements Azione{
         this.SetOn = SetOn;
     }
    
-   public void esegui() throws Exception{
+   public void esegui(){
        if(SetOn)
            attuatore.accendi();
        else
