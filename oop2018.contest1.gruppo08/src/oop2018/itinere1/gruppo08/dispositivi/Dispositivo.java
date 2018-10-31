@@ -17,10 +17,6 @@ public abstract class Dispositivo {
         this.id = id;
     }
 
-    @Override
-    public String toString() {
-        return "ID dispositivo: " + id + ", Stato: " + acceso;
-    }
 
     @Override
     public int hashCode() {
@@ -62,6 +58,12 @@ public abstract class Dispositivo {
             return true;
         else 
             return false;
+    }
+    
+    @Override
+    public String toString() {
+        
+        return "ID dispositivo: " + id + ", Stato: " + acceso;
     }
     
     
