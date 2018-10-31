@@ -9,6 +9,18 @@ package oop2018.itinere1.gruppo08.dispositivi;
  *
  * @author liovi
  */
-public class Condizionatore {
+public class Condizionatore extends AttuatoreRegolabile{
+    
+    public Condizionatore(int id, double livelloMin, double livelloMax, double livello) {
+        super(id, livelloMin, livelloMax, livello);
+    }
+
+    
+    //DA FARE
+    @Override
+    public String toString() {
+        return super.toString()+" - Tipo: Condizionatore";
+    }
+    
     
 }
