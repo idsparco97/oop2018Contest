@@ -28,7 +28,8 @@ public class ImpostaLivello implements Azione{
 
     @Override
     public String toString() {
-        return ", Attuatore regolabile Liv/min/max = ";
+        return super.toString() + ", Attuatore regolabile Liv/min/max = " + ar.getLivello()+"/"
+                + ar.getLivelloMin()+"/" + ar.getLivelloMax() ;
     }
     
     
