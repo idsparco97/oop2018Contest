@@ -21,7 +21,7 @@ public class ImpostaLivello implements Azione{
 
     @Override
     public void esegui() throws LivelloNonValidoException {
-        if((ar.getLivelloMin() < ar.getLivello()) && (ar.getLivello()<ar.getLivelloMax())){
+        if((ar.getLivelloMin() <= ar.getLivello()) && (ar.getLivello()<=ar.getLivelloMax())){
             livelloDaImpostare=ar.getLivello();
         }
         else 
